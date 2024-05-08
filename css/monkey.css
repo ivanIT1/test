@@ -1,0 +1,40 @@
+
+
+.monkey-image {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 1.75rem;
+}
+
+@media(min-width: 600px)and (min-height: 450px) {
+    .monkey-image {
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 2.5rem
+    }
+}
+
+
+/*# sourceMappingURL=BundleAuth.50cebfe0e8fb38f5e68a.css.map*/
+
+.sus_logo {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-bottom: 1.75rem;
+}
+
+@media(min-width: 600px)and (min-height: 450px) {
+    .sus_logo {
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 2.5rem
+    }
+}

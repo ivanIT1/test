@@ -1,0 +1,695 @@
+
+.logo {
+    background: url(/telegram-logo.1b2bb5b107f046ea9325.svg) no-repeat;
+    background-size: 100%;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1.75rem;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 7.5rem;
+        height: 7.5rem;
+        margin-bottom: 1.75rem;
+}
+
+
+
+@media(min-width: 600px)and (min-height: 450px) {
+
+    .logo
+     {
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+
+
+@media(min-width: 600px) {
+    .title {
+        font-size: 2rem;
+        line-height: 1.5
+    }
+}
+
+.auth {
+width: 100%;
+    max-width: 25.5rem;
+    margin: 0 auto;
+    padding: 6rem 1rem 1rem;
+    text-align: center;
+}
+
+@media(min-width: 600px)and (min-height: 450px) {
+    .auth {
+        padding: 6.8125rem 1.5rem 1.5rem;
+    }
+
+  
+}
+
+.note {
+    font-size: .875rem;
+    line-height: 1.35;
+    margin-bottom: 2.5rem;
+    color: rgb(170, 170, 170);
+}
+
+@media(min-width: 600px) {
+     .note {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+.form {
+    min-height: 26.25rem; 
+}
+
+.DropdownMenu {
+    position: relative
+}
+
+/* Страна */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem
+}
+.CountryCodeInput .input-group {
+    cursor: var(--custom-cursor, pointer);
+    z-index: 10;
+}
+
+.CountryCodeInput .input-group .Spinner {
+    position: absolute;
+    top: 1rem;
+    right: .75rem;
+    opacity: .5;
+    --spinner-size: 1.5rem
+}
+
+.CountryCodeInput .input-group .css-icon-down {
+    position: absolute;
+    top: 1.125rem;
+    right: 1rem;
+    width: .75rem;
+    height: .75rem;
+    border: 2px solid var(--color-text-secondary);
+    border-top: 0;
+    border-left: 0;
+    transform: scaleY(1) rotate(45deg);
+    transition: color .2s ease, transform .2s ease, top .2s ease
+}
+
+.CountryCodeInput .input-group .css-icon-down.open {
+    border-color: var(--color-primary);
+    transform: scaleY(-1) rotate(45deg);
+    top: 1.5rem
+}
+
+.form-control {
+    --border-width: 1px;
+    display: block;
+    width: 100%;
+    height: 3.375rem;
+    padding: calc(.75rem - var(--border-width)) calc(.9rem - var(--border-width));
+    border: var(--border-width) solid rgb(91, 91, 90);;
+    border-radius: var(--border-radius-default);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    outline: none;
+    transition: border-color .15s ease;
+    word-break: break-word;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    line-height: 1.25rem
+}
+
+.form-control[dir] {
+    text-align: initial
+}
+
+.form-control:hover {
+    border-color: var(--color-primary)
+}
+
+.form-control:hover+label {
+    color: var(--color-primary)
+}
+
+.form-control:focus,
+.form-control.focus {
+    border-color: var(--color-primary);
+    box-shadow: inset 0 0 0 1px var(--color-primary);
+    caret-color: var(--color-primary)
+}
+
+.form-control:focus+label,
+.form-control.focus+label {
+    color: var(--color-primary)
+}
+
+.form-control:disabled {
+    background: none !important
+}
+
+
+
+
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ 
+
+ .CountryCodeInput.open .Menu {
+     display: block;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin-top: 0;
+     margin-bottom: .5rem;
+     font-weight: 500
+ }
+
+
+ .input-group label {
+     display: block;
+     padding: 0 .25rem;
+     position: absolute;
+     left: .75rem;
+     top: .9375rem;
+     background-color: var(--color-background);
+     font-size: 1rem;
+     font-weight: 400;
+     color: var(--color-placeholders);
+     transition: transform .15s ease-out, color .15s ease-out;
+     cursor: var(--custom-cursor, text);
+     pointer-events: none;
+     transform-origin: left center;
+     white-space: nowrap
+ }
+
+ .input-group.with-arrow::after {
+     content: "";
+     position: absolute;
+     height: .75rem;
+     width: .75rem;
+     border-left: 1px var(--color-text-secondary) solid;
+     border-bottom: 1px var(--color-text-secondary) solid;
+     transform: rotate(-45deg);
+     right: 2rem;
+     top: 1rem
+ }
+
+ .input-group.touched label,
+ .input-group.error label,
+ .input-group.success label,
+ .input-group .form-control:focus+label,
+ .input-group .form-control.focus+label {
+     transform: scale(0.75) translate(-0.5rem, -2.25rem)
+ }
+
+
+
+ .input-group input::placeholder,
+ .input-group .form-control::placeholder {
+     color: var(--color-placeholders)
+ }
+
+ .input-group.touched label {
+     color: var(--color-text-secondary)
+ }
+
+ .input-group.error label {
+     color: var(--color-error) !important
+ }
+
+ .input-group.success label {
+     color: var(--color-text-green) !important
+ }
+
+ .input-group.disabled {
+     opacity: .5;
+     pointer-events: none
+ }
+
+ .input-group[dir=rtl] input {
+     text-align: right
+ }
+
+ .input-group[dir=rtl] label {
+     left: auto;
+     right: .75rem
+ }
+
+ .input-group[dir=rtl].with-arrow::after {
+     border-left: none;
+     border-right: 1px var(--color-text-secondary) solid;
+     right: auto;
+     left: 2rem
+ }
+
+ .input-group[dir=rtl].touched label,
+ .input-group[dir=rtl].error label,
+ .input-group[dir=rtl].success label,
+ .input-group[dir=rtl] .form-control:focus+label,
+ .input-group[dir=rtl] .form-control.focus+label {
+     transform: scale(0.75) translate(1.5rem, -2.25rem)
+ }
+ .CountryCodeInput .input-group .css-icon-down {
+     position: absolute;
+     top: 1.125rem;
+     right: 1rem;
+     width: .75rem;
+     height: .75rem;
+     border: 2px solid var(--color-text-secondary);
+     border-top: 0;
+     border-left: 0;
+     transform: scaleY(1) rotate(45deg);
+     transition: color .2s ease, transform .2s ease, top .2s ease
+ }
+
+ .CountryCodeInput .input-group .css-icon-down.open {
+     border-color: var(--color-primary);
+     transform: scaleY(-1) rotate(45deg);
+     top: 1.5rem
+ }
+
+
+/* картинки */
+.MenuItem {
+    width: 100%;
+    background: none;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    display: flex;
+    align-items: center;
+    padding: .75rem 1rem;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.5rem;
+    white-space: nowrap;
+    color: var(--color-text);
+    --ripple-color: rgba(0, 0, 0, 0.08);
+    cursor: var(--custom-cursor, pointer);
+    unicode-bidi: plaintext
+}
+
+.MenuItem .right-badge {
+    min-width: 1.5rem;
+    height: 1.5rem;
+    margin-left: auto;
+    background: var(--color-gray);
+    border-radius: .75rem;
+    padding: 0 .4375rem;
+    color: #fff;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    flex-shrink: 0
+}
+
+.MenuItem.compact .right-badge {
+    background: none;
+    padding: 0;
+    color: var(--color-text-secondary)
+}
+
+.MenuItem[dir=rtl] .right-badge {
+    margin-left: 0;
+    margin-right: auto
+}
+
+@media(hover: hover) {
+
+    .MenuItem:hover,
+    .MenuItem:focus {
+        background-color: var(--color-chat-hover);
+        text-decoration: none;
+        color: inherit
+    }
+}
+
+@media(max-width: 600px) {
+
+    .MenuItem:focus,
+    .MenuItem:hover,
+    .MenuItem:active {
+        text-decoration: none;
+        color: inherit
+    }
+
+    .MenuItem:active {
+        background-color: var(--color-chat-hover)
+    }
+}
+
+.MenuItem .icon {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: var(--color-icon-secondary)
+}
+
+.MenuItem .menu-item-name {
+    margin-right: 2rem
+}
+
+.MenuItem .menu-item-name.capitalize {
+    text-transform: capitalize
+}
+
+.MenuItem.disabled {
+    opacity: .5 !important;
+    cursor: var(--custom-cursor, default) !important
+}
+
+.MenuItem.destructive {
+    color: var(--color-error)
+}
+
+.MenuItem.destructive .icon {
+    color: inherit
+}
+
+.MenuItem:not(.has-ripple):not(.disabled):not(.compact):active {
+    background-color: var(--color-item-active);
+    transition: none !important
+}
+
+.MenuItem .Switcher,
+.MenuItem .menu-item-badge {
+    margin-left: auto
+}
+
+.MenuItem .menu-item-badge {
+    margin-right: .25rem;
+    font-size: .75rem;
+    color: var(--color-primary);
+    font-weight: normal;
+    line-height: normal
+}
+
+.MenuItem[dir=rtl] .icon {
+    margin-left: 2rem;
+    margin-right: 0
+}
+
+.MenuItem[dir=rtl] .menu-item-name {
+    margin-left: 2rem;
+    margin-right: 0
+}
+
+.MenuItem[dir=rtl]>.Switcher {
+    margin-left: 0;
+    margin-right: auto
+}
+
+.MenuItem.compact {
+    font-size: .875rem;
+    margin: .125rem .25rem;
+    padding: .25rem;
+    border-radius: .375rem;
+    width: auto;
+    font-weight: 500;
+    transform: scale(1);
+    transition: .15s ease-in-out transform
+}
+
+.MenuItem.compact .icon {
+    max-width: 1.25rem;
+    font-size: 1.25rem;
+    margin-left: .5rem;
+    margin-right: 1.25rem
+}
+
+.MenuItem.compact .icon::before {
+    max-width: 1.25rem
+}
+
+@media(hover: hover) {
+
+    .MenuItem.compact:hover,
+    .MenuItem.compact:focus,
+    .MenuItem.compact:active {
+        background: var(--color-background-compact-menu-hover);
+        text-decoration: none
+    }
+
+    .MenuItem.compact:active {
+        transform: scale(0.98)
+    }
+}
+
+.MenuItem b {
+    font-weight: 600
+}
+
+.MenuItem.wrap {
+    display: block;
+    white-space: normal
+}
+
+.MenuItem.menu-custom-emoji-sets {
+    margin: 0 .25rem;
+    padding: .5rem .75rem;
+    font-weight: 400;
+    font-size: small;
+    line-height: 1.125rem
+}
+.CountryCodeInput .country-flag .emoji {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: 4px;
+    margin: -0.5rem .125rem
+}
+
+.form .open {
+    transform: scale(1)
+}
+
+
+.Menu  {
+    overflow: hidden;
+    display: none;
+    list-style: none;
+    padding: .5rem 0;
+    margin: 0;
+    position: relative;
+    background-color: var(--color-background);
+    box-shadow: 0 .25rem .5rem .125rem var(--color-default-shadow);
+    border-radius: var(--border-radius-default);
+    min-width: 13.5rem;
+    z-index: var(--z-menu-bubble);
+    overscroll-behavior: contain;
+    color: var(--color-text);
+   width: 100%;
+    transition: opacity 150ms cubic-bezier(0.2, 0, 0.2, 1), transform 150ms cubic-bezier(0.2, 0, 0.2, 1) !important;
+    --offset-y: calc(100% + 0.5rem);
+    --offset-x: 0;
+    overflow-y: auto;
+    max-height: 23.5rem;
+}
+.Checkbox {
+    display: block;
+    position: relative;
+    padding-left: 4.5rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    cursor: var(--custom-cursor, pointer)
+}
+
+.Checkbox.disabled {
+    cursor: var(--custom-cursor, default);
+    opacity: .5
+}
+
+.Checkbox.round .Checkbox-main::before {
+    border-radius: 50%
+}
+
+.Checkbox.round .Checkbox-main::after {
+    background: var(--color-primary) url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjkuOEw1LjggOC45IDIuMSA1LjJjLS40LS40LTEuMS0uNC0xLjYgMC0uNC40LS40IDEuMSAwIDEuNkw1IDExLjJjLjQuNCAxLjEuNCAxLjYgMGw4LjktOC45Yy40LS40LjQtMS4xIDAtMS42LS41LS40LTEuMi0uNC0xLjYuMXoiIGZpbGw9IiNGRkYiLz48L3N2Zz4=) no-repeat 50% 50%;
+    background-size: 12px;
+    border-radius: 50%
+}
+
+.Checkbox.loading .Checkbox-main::before,
+.Checkbox.loading .Checkbox-main::after {
+    opacity: 0 !important
+}
+
+.Checkbox.loading .Spinner {
+    position: absolute;
+    left: .375rem;
+    top: .125rem;
+    opacity: 0;
+    animation: fade-in .2s ease forwards;
+    --spinner-size: 1.25rem
+}
+
+.Checkbox.blocking input:not(:checked)~.Checkbox-main::before {
+    border-color: var(--color-error)
+}
+
+.Checkbox.blocking input:not(:checked)~.Checkbox-main::after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjZTUzOTM1IiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xOCwzIEMxOS42NTY4NTQyLDMgMjEsNC4zNDMxNDU3NSAyMSw2IEwyMSwxOCBDMjEsMTkuNjU2ODU0MiAxOS42NTY4NTQyLDIxIDE4LDIxIEw2LDIxIEM0LjM0MzE0NTc1LDIxIDMsMTkuNjU2ODU0MiAzLDE4IEwzLDYgQzMsNC4zNDMxNDU3NSA0LjM0MzE0NTc1LDMgNiwzIEwxOCwzIFogTTE2LDExIEw4LDExIEM3LjQ0NzcxNTI1LDExIDcsMTEuNDQ3NzE1MyA3LDEyIEM3LDEyLjU1MjI4NDcgNy40NDc3MTUyNSwxMyA4LDEzIEwxNiwxMyBDMTYuNTUyMjg0NywxMyAxNywxMi41NTIyODQ3IDE3LDEyIEMxNywxMS40NDc3MTUzIDE2LjU1MjI4NDcsMTEgMTYsMTEgWiIvPgogIDwvZz4KPC9zdmc+Cg==);
+    opacity: 1;
+    background-size: 1.375rem;
+    background-position: -0.125rem -0.125rem
+}
+
+.Checkbox input {
+    position: absolute;
+    z-index: var(--z-below);
+    opacity: 0
+}
+
+.Checkbox .Checkbox-main::before,
+.Checkbox .Checkbox-main::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1.1875rem;
+    top: .1875rem;
+    width: 1.125rem;
+    height: 1.125rem
+}
+
+.Checkbox .Checkbox-main::before {
+    border: 2px solid var(--color-borders-input);
+    border-radius: .25rem;
+    background-color: var(--color-background);
+    transition: border-color .1s ease, background-color .1s ease
+}
+
+.Checkbox .Checkbox-main::after {
+    background: center no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEzLjkuOEw1LjggOC45IDIuMSA1LjJjLS40LS40LTEuMS0uNC0xLjYgMC0uNC40LS40IDEuMSAwIDEuNkw1IDExLjJjLjQuNCAxLjEuNCAxLjYgMGw4LjktOC45Yy40LS40LjQtMS4xIDAtMS42LS41LS40LTEuMi0uNC0xLjYuMXoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvc3ZnPg==);
+    background-size: .875rem;
+    opacity: 0;
+    transition: opacity .1s ease
+}
+
+.Checkbox .Checkbox-main .label {
+    display: flex;
+    align-items: center;
+    text-align: initial;
+    flex-wrap: wrap;
+    column-gap: .25rem
+}
+
+.Checkbox .Checkbox-main .right-icon {
+    margin-left: auto;
+    color: var(--color-text-secondary);
+    font-size: 1.25rem
+}
+
+.Checkbox .Checkbox-main .subLabel {
+    display: block;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: var(--color-text-secondary)
+}
+
+.Checkbox input:checked~.Checkbox-main::before {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary)
+}
+
+.Checkbox input:checked~.Checkbox-main::after {
+    opacity: 1
+}
+
+.Checkbox[dir=rtl] {
+    padding-left: 0;
+    padding-right: 4.5rem
+}
+
+.Checkbox[dir=rtl].loading .Spinner {
+    left: auto;
+    right: .375rem
+}
+
+.Checkbox[dir=rtl] .label,
+.Checkbox[dir=rtl] .subLabel {
+    text-align: right
+}
+
+.Checkbox[dir=rtl] .Checkbox-main::before,
+.Checkbox[dir=rtl] .Checkbox-main::after {
+    left: auto;
+    right: 1.1875rem
+}
+
+ .Button {
+    margin-top: 2.75rem;
+}
+
+.Button.primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    --ripple-color: rgba(0, 0, 0, 0.08);
+}
+
+.Button {
+    outline: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3.5rem;
+    border: 0;
+    border-radius: var(--border-radius-default);
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    padding: .625rem;
+    color: #fff;
+    line-height: 1.2;
+    cursor: var(--custom-cursor, pointer);
+    text-transform: uppercase;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    transition: background-color .15s, color .15s;
+    text-decoration: none !important;
+    --premium-gradient: linear-gradient(88.39deg, #6C93FF -2.56%, #976FFF 51.27%, #DF69D1 107.39%);
+    font-size: inherit;
+}
+
+@media (min-width: 600px) and (min-height: 450px) {
+    .auth-form {
+        padding: 6.8125rem 1.5rem 1.5rem;
+    }
+}
+
+.auth-form {
+    width: 100%;
+    max-width: 25.5rem;
+    margin: 0 auto;
+    padding: 6rem 1rem 1rem;
+    text-align: center;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.note {
+    font-size: .875rem;
+    line-height: 1.35;
+    margin-bottom: 2.5rem;
+    color: rgb(170, 170, 170);
+}
+
